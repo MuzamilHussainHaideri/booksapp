@@ -29,6 +29,6 @@ class BooksController < ApplicationController
   end
 
   def find_book
-    @book = Book.find(params[ :id ])
+    @book = Book.find_by(params[:id])
   end
 end
