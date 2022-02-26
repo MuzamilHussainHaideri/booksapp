@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c58c3aa6-073c-48df-8efc-ae556033f60e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/books_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/views/books/_form.html.erb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/views/books/new.html.erb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/views/books/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20220226070220_create_books.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/books_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/books.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/book_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
@@ -149,7 +156,7 @@
       <updated>1645784348844</updated>
       <workItem from="1645784350186" duration="441000" />
       <workItem from="1645784865017" duration="25000" />
-      <workItem from="1645784893133" duration="23284000" />
+      <workItem from="1645784893133" duration="23757000" />
     </task>
     <servers />
   </component>
