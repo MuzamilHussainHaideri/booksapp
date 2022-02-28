@@ -46,7 +46,7 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 #gem addition
 
@@ -60,12 +60,15 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 gem 'jquery-rails'
 
+
+gem 'activestorage'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
+  gem 'pry'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 

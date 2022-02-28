@@ -1,5 +1,10 @@
 <% @books.each do |book| %>
-<h2><%= link_to book.name, books_path(book) %></h2>
-<% end %>
+<a  href="/books/<% book.id %>" >
+  <%= image_tag book.image.variant(resize_to_limit: [350, 250]) if book.image.attached?  %>
 
-<%= link_to "Add Book" , new_books_path %>
+
+</a>
+<% end %>
+<br>
+<br>
+<%= link_to "Add Book" , new_book_path %>

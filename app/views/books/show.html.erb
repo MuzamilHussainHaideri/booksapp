@@ -1,3 +1,34 @@
-<h2><%= @book.name %></h2>
-<h3><%= @book.author %></h3>
-<p><%= @book.description %></p>
+<div class="row">
+
+  <div class="col-md-3">
+
+    <%= image_tag @book.image.variant(resize_to_limit: [350, 250]) if @book.image.attached? %>
+
+  </div>
+
+  <div class="col-md-9">
+
+    <div class="book-info">
+
+      <h2 class="book-title"><%= @book.name %></h2>
+      <h3 class="book-author"><span>From</span> <%= @book.author %></h3>
+      <p class="book-desc"><%= @book.description %></p>
+      <%= link_to "Back", root_path(@book) %>
+      <% if user_signed_in? %>
+
+        <% if @book.user_id == current_user.id %>
+
+          <%= link_to "Edit", edit_book_path(@book) %>
+          <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm:"Are you sure to delete?"} %>
+
+        <% end %>
+
+      <% end %>
+
+    </div>
+  </div>
+
+
+</div>
+
+
