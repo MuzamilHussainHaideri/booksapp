@@ -1,9 +1,9 @@
 <%= simple_form_for @book do |f| %>
-  <%= f.input :name, lable: "Book Title" %>
-  <%= f.input :description %>
-  <%= f.input :author %>
+  <%= f.input :name, lable: "Book Title" %><br>
+  <%= f.input :description %><br>
+  <%= f.input :author %><br>
   <%= f.input :image, multiple: true %><br>
-  <%= f.button :submit %>
+  <%= f.button :submit,:class => 'btn-custom2'  %>
 <% end %>
 
 
