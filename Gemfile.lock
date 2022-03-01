@@ -282,7 +282,7 @@ DEPENDENCIES
   pry
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.2)
-  rails_12factor (~> 0.0.3)
+  rails_12factor
   selenium-webdriver
   simple_form (~> 5.1)
   sprockets-rails
