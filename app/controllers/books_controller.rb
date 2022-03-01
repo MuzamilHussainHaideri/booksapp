@@ -1,11 +1,15 @@
 class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destory]
   before_action :authenticate_user!, only: [:new, :edit]
+  before_action :set_search
 
   def index
-    @books = Book.all.order("created_at DESC")
+    @q = Book.ransack(params[:q])
+    @books = @q.result(distinct: true)
   end
-
+  def set_search
+    @q=Book.search(params[:q])
+  end
   def new
     @book = current_user.books.build
   end

@@ -20,7 +20,18 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li></li>
+        <li>
+          <div>
+            <%= search_form_for @q do |f| %>
+              <%= f.label :"" , :class=> '' %>
+              <%= f.search_field :name_cont, :class=> 'form-control mr-sm-2' %>
+              <%= f.submit :class=>'btn btn-outline-success'%>
+            <% end %>
+          </div>
+
+
+        </li>
+
 
         <% if !current_user %>
 
