@@ -22,15 +22,19 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <div>
-            <%= search_form_for @q do |f| %>
-              <%= f.label :"" , :class=> '' %>
-              <%= f.search_field :name_cont, :class=> 'form-control mr-sm-2' %>
-              <%= f.submit :class=>'btn btn-outline-success'%>
+
+
+            <%= form_with url: "@q" do |form| %>
+              <%= form.text_field :name %>
+              <%= form.submit "Search" %>
             <% end %>
+
+
           </div>
 
 
         </li>
+
 
 
         <% if !current_user %>
