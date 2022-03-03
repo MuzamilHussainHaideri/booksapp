@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destory]
   before_action :authenticate_user!, only: [:new, :edit]
+  
 
   def index
     @q = Book.ransack(params[:q])
