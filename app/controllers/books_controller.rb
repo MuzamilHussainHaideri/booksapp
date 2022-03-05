@@ -6,7 +6,6 @@ class BooksController < ApplicationController
   def index
     @q = Book.ransack(params[:q])
     @books = @q.result(distinct: true)
-    
   end
 
   def new
@@ -39,7 +38,7 @@ class BooksController < ApplicationController
   end
 
   def destory
-    @book.destory
+    @book.destroy
     redirect_to root_path
   end
 

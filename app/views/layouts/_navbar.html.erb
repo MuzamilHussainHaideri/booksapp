@@ -25,8 +25,8 @@
 
 
             <%= form_with url: "@q" do |form| %>
-              <%= form.text_field :name %>
-              <%= form.submit "Search" %>
+              <%= form.text_field :name, :class => "form-control mr-sm-2" %>
+              <%= form.submit "Search", :class =>"btn btn-outline-success my-2 my-sm-0" %>
             <% end %>
 
 
