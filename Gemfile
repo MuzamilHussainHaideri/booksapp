@@ -66,6 +66,9 @@ gem 'ransack'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
+gem 'activeadmin', github: 'tagliala/activeadmin', branch: 'feature/railties-7' # FIXME: revert to stable
+
+gem 'active_skin', '~> 0.0.13'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
