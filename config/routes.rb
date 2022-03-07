@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :users, :controllers => { registration: 'registrations' }
+  resources :users
   resources :books do
     resources :reviews
     end

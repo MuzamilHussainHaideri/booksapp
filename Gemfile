@@ -70,6 +70,8 @@ gem 'activeadmin', github: 'tagliala/activeadmin', branch: 'feature/railties-7' 
 
 gem 'active_skin', '~> 0.0.13'
 
+gem 'rolify'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
