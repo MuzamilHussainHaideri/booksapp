@@ -1,7 +1,11 @@
 class BooksController < ApplicationController
-  before_action :find_book, only: [:show, :edit, :update, :destory]
+  before_action :find_book, only: [:show, :edit, :update, :destory, :update_stauts]
   before_action :authenticate_user!, only: [:new, :edit]
-  
+
+  def is_published
+    @book = Book.find(params[:id])
+
+  end
 
   def index
     @q = Book.ransack(params[:q])
@@ -45,7 +49,7 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit( :name, :description, :author,:image)
+    params.require(:book).permit( :name, :description, :author,:image, :is_published)
   end
 
   def find_book

@@ -15,28 +15,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-
-
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <div>
-
-
-            <%= form_with url: "@q" do |form| %>
-              <%= form.text_field :name, :class => "form-control mr-sm-2" %>
-              <%= form.submit "Search", :class =>"btn btn-outline-success my-2 my-sm-0" %>
-            <% end %>
-
-
-          </div>
-
-
-        </li>
-
-
-
         <% if !current_user %>
 
           <li><%= link_to "Sign Up", new_user_registration_path %></li>

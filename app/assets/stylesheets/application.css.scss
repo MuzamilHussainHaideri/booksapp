@@ -316,3 +316,12 @@ p.alert, p.notice {
   }
 
 }
+
+.name {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  span {
+    font-size: 0.80em;
+  }
+}

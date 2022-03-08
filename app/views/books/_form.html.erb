@@ -1,8 +1,15 @@
 <%= simple_form_for @book do |f| %>
+
   <%= f.input :name, lable: "Book Title" %><br>
   <%= f.input :description %><br>
   <%= f.input :author %><br>
   <%= f.input :image, multiple: true %><br>
+  <div class="field">
+    <%= f.label :is_published %>
+    <%= f.check_box :is_published %> <br />
+  </div>
+
+
   <%= f.button :submit,:class => 'btn-custom2'  %>
 <% end %>
 

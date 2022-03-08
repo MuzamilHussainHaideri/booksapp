@@ -1,9 +1,12 @@
 <div class="review">
 
-
   <p class="review-comment"><%= review.comment %></p>
-  <%= review.user.name %></p>
-  <%= review.created_at %></p>
+  <span>
+    <h4 ><%= review.user.name %></h4>
+    <h5 ><%= review.created_at.strftime("%m/%d/%Y") %></h5>
+  </span>
+
+
 
 
 

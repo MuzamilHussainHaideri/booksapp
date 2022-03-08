@@ -62,7 +62,7 @@ gem 'jquery-rails'
 
 gem 'activestorage'
 
-gem 'ransack'
+gem 'ransack', github: 'activerecord-hackery/ransack'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
