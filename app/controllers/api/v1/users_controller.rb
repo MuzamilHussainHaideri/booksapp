@@ -1,4 +1,5 @@
 class Api::V1::UserController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def index
     render json: User.all, root: false
@@ -8,6 +9,7 @@ class Api::V1::UserController < ApplicationController
     render json: User.find(params[:id])
 
   end
+
   def new
     render json: User.new(params[:id])
   end
@@ -23,5 +25,5 @@ class Api::V1::UserController < ApplicationController
 end
 
 def user_params
-  params.require(:user).permit( :id, :name, :email)
+  params.require(:user).permit(:id, :name)
 end

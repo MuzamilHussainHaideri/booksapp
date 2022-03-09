@@ -1,12 +1,12 @@
 class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destory, :update_stauts]
   before_action :authenticate_user!, only: [:new, :edit]
+  skip_before_action :verify_authenticity_token
 
   def is_published
     @book = Book.find(params[:id])
 
   end
-
   def index
     @q = Book.ransack(params[:q])
     @books = @q.result(distinct: true)
