@@ -66,7 +66,7 @@ gem 'ransack', github: 'activerecord-hackery/ransack'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
-gem 'activeadmin', github: 'tagliala/activeadmin', branch: 'feature/railties-7' # FIXME: revert to stable
+gem 'activeadmin', '~> 2.9'
 
 gem 'active_skin', '~> 0.0.13'
 
